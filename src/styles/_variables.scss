@@ -1,0 +1,204 @@
+///////////////////////////////////////////////////// Variables Start ///////////////////////////////////////////////////////////////////
+
+// Custom Border Radius
+$global_corner_lg: 1.25rem; //used
+$global_corner_md: 0.938rem; //used
+$global_corner_xl: 1.875rem; //used
+$global_corner_half: 50%; //used
+
+// Font Size Bootstrap Variables
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75; //used
+$h4-font-size: $font-size-base * 1.5; //used
+$h5-font-size: $font-size-base * 1.375; //used //22px
+$h6-font-size: $font-size-base * 1.125; //used //18px
+$font-size-lg: $font-size-base * 1.125; //used //18px
+$font-size-md: $font-size-base * 1; //used //16px
+$font-size-sm: $font-size-base * 1; //used //16px
+$font-size-xs: $font-size-base * .75;
+
+$global-box-shadow_5: rgba(0, 0, 0, 0.24) 0px 3px 8px; //used
+$input-box-shadow: 0rem 0.125rem 0.5rem rgba(0, 0, 0, 0.15);
+$global-btn-box-shadow:inset 0px 3.46122px 3.46122px rgba(0, 0, 0, 0.25), inset -8px -8px 12.8px rgba(0, 0, 0, 0.3), inset 8px 8px 12.8px rgba(255, 255, 255, 0.1);
+$box-shadow-sm:0 .125rem .5rem rgba(black, .15);
+
+//colors
+$primary-white: #ffffff; //used
+$light: #f6f6f6; //used
+$primary: #92D050; //used
+$dark: #313F4E; //used
+$primary-text: #5C6066;
+$primary-gradient: linear-gradient(360.02deg, #92D050 2.02%, #92D050 100%);
+$secondary: #EB8A21; //used
+$secondary-bg: #181F2C; //used
+$secondary-gradient: linear-gradient(95.02deg, #EB8A21 7.02%, #EB8A21 95.7%);
+$search-bottom: #A2A2A2;
+$placeholder-color: #ABABAB;
+$profile-text-color: #8C8C8C;
+$success: #2ACE58; 
+$warning: #ffc107; 
+$error: #ff0000; 
+$danger: $error;
+$info: #2A7FCE;
+$black: #000000;
+$global-border-color: #d0d0d0;
+$primary-black: $black;
+$primary-overlay: #00467750;
+$table-border-color: #e0e0e0;
+
+// Body
+$body-bg: $primary-white; //used
+$body-color: $primary-text;
+
+// Typography
+$font-family-sans-serif: 'Segoe UI', sans-serif;
+$font-family-base: $font-family-sans-serif !default;
+
+//container variable
+$container-max-size: 92%;
+
+// anchor links
+$link-color: $primary;
+$link-decoration: unset;
+$link-hover-color: $primary;
+//anchor links end
+
+//Button start
+$btn-padding-y: 0.25rem;
+$btn-padding-x: 2.5rem;
+$btn-font-family: $font-family-sans-serif;
+$btn-font-size: 0.875rem;
+$btn-link-color: $primary-white;
+$btn-link-hover-color: $primary-white;
+$btn-primary-color: $primary-white;
+$btn-bg: $primary; //used
+$btn-gradient: linear-gradient(95.02deg, #5C5524 7.02%, #5C5524 95.7%); //used
+$btn-box-shadow: inset 0rem 0.216rem 0.216rem rgba(0, 0, 0, 0.25), inset -0.5rem -0.5rem 0.8rem rgba(0, 0, 0, 0.3), inset 0.5rem 0.5rem 0.8rem rgba(255, 255, 255, 0.1);
+$btn-border-radius: 0;
+$btn-transition: all .3s linear;
+$btn-border-width: 0px;
+$input-focus-box-shadow: 0 0 0 0.125rem rgba(146, 208, 80, 0.25);
+$btn-font-weight: bold;
+
+// Nav pills Variables
+$nav-link-padding-y:                1.25rem;
+$nav-link-padding-x:                2.25rem;
+$nav-link-font-size:                1.125rem;
+$nav-link-font-weight:              400;
+$nav-link-color:                    $link-color;
+$nav-link-hover-color:              $link-hover-color;
+$nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+$nav-link-disabled-color:           rgba($link-color, 15%);
+
+/** form and input starts */
+// Form Label
+$form-label-margin-bottom: 0.625rem;
+$form-label-font-size: 1.125rem;
+$form-label-font-style: normal;
+$form-label-font-weight:  400;
+$form-label-color: $primary-white;
+$form-check-label-color: $primary-white;
+// Form Input
+$input-padding-x: 0.75rem;
+$input-padding-y: 0.25rem;
+$input-padding-x-sm: 0.21875rem;
+$input-padding-y-sm: 0.5375rem;
+$input-padding-x-xs: 0.14583333333rem;
+$input-padding-y-xs: 0.26875rem;
+$input-font-family: $font-family-sans-serif;
+$input-font-size: 1.125rem;
+$input-font-weight: 400;
+$input-bg: $primary-white;
+$input-color: #777777;
+$input-border-width: 0.003rem;
+$input-box-shadow: $input-box-shadow;
+$input-border-radius: 0.313rem;
+$input-border-radius-sm: 0.3125rem;
+$input-border-radius-xs: 0.15625rem;
+$input-focus-bg: $primary-white;
+$input-focus-color: #17263A;
+$input-focus-width: 0;
+$input-focus-box-shadow: none;
+$input-margin: 1.25rem;
+$input-max-width-lg: 7rem;
+$input-max-width-md: 6rem;
+$input-max-width-sm: 5rem;
+$input-max-width-xs: 3.125rem;
+// Form Select
+$form-select-color:                 $input-color;
+$form-select-box-shadow:          $input-box-shadow;
+$form-select-focus-box-shadow:    $input-box-shadow;
+
+// MainContent
+$mainContentPadding: 1.75rem 0.75rem; // for main content page padding
+// $mainContentWidth: calc(100% - $sidebar-width); // for main-content width
+
+// Container
+$container-max-widths: (
+  xxl: 95%
+);
+
+
+// ========= font-size mixin start ==========
+// h1 style
+@mixin font-h1 {
+	font-size: $h1-font-size;line-height: 125%;font-weight: 900;color: $secondary;
+	@media(min-width:1200px) and (max-width:1620px) {font-size: calc($h1-font-size * 0.938)}
+	@media (max-width:1199px) {font-size: calc($h1-font-size * 0.875)}
+}
+// h2 style
+@mixin font-h2 {
+	font-size: $h2-font-size;line-height: 125%;font-weight: 700;color: $primary;
+	@media(min-width:1200px) and (max-width:1620px){font-size: calc($h2-font-size * 0.938)}
+	@media (max-width:1199px){font-size: calc($h2-font-size * 0.875)}
+}
+// h3 style
+@mixin font-h3 {
+	font-size: $h3-font-size;line-height: 125%;font-weight: 600;color: $secondary;
+	@media(min-width:1200px) and (max-width:1620px){font-size: calc($h3-font-size * 0.938)}
+	@media (max-width:1199px){font-size: calc($h3-font-size * 0.875)}
+}
+// h4 style
+@mixin font-h4 {
+	font-size: $h4-font-size;line-height: 125%;font-weight: 500;color: $primary;
+	@media(min-width:1200px) and (max-width:1620px){font-size: calc($h4-font-size * 0.938)}
+	@media (max-width:1199px){font-size: calc($h4-font-size * 0.875)}
+}
+// h5 style
+@mixin font-h5 {
+	font-size: $h5-font-size;line-height: 125%;font-weight: 500;color: $primary;
+	@media(min-width:1200px) and (max-width:1620px){font-size: calc($h5-font-size * 0.938)}
+	@media (max-width:1199px){font-size: calc($h5-font-size * 0.875)}
+}
+// h6 style
+@mixin font-h6 {
+	font-size: $h6-font-size;line-height: 150%;font-weight: 500;color: $secondary;
+	@media(min-width:1200px) and (max-width:1620px){font-size: calc($h6-font-size * 0.938)}
+	@media (max-width:1199px){font-size: calc($h6-font-size * 0.875)}
+}
+// paragraph style
+@mixin font-lg {
+	font-size: $font-size-lg;line-height: 150%;font-weight: 400;color: $primary;
+	@media(min-width:1200px) and (max-width:1620px){font-size: calc($font-size-lg * 0.938)}
+	@media (max-width:1199px){font-size: calc($font-size-lg * 0.875)}
+}
+// paragraph style
+@mixin font-base {
+	font-size: $font-size-base;line-height: 150%;font-weight: 500; margin-bottom: 0;
+	@media(min-width:1200px) and (max-width:1620px){font-size: calc($font-size-base * 0.938)}
+	@media (max-width:1199px){font-size: calc($font-size-base * 0.875)}
+}
+// span
+@mixin font-sm {
+	font-size: $font-size-sm;line-height: 150%;font-weight: 500;
+	@media(min-width:1200px) and (max-width:1620px){font-size: calc($font-size-sm * 0.938)}
+	@media (max-width:1199px){font-size: calc($font-size-sm * 0.875)}
+}
+// small
+@mixin font-xs {
+	font-size: $font-size-xs;line-height: 150%;font-weight: 100;color: $primary;
+	@media(min-width:1200px) and (max-width:1620px){font-size: calc($font-size-xs * 0.938)}
+	@media (max-width:1199px){font-size: calc($font-size-xs * 0.875)}
+}
